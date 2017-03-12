@@ -7,6 +7,6 @@ features = ["blog"]
 min_version = 0.15
 
 [author]
-    name = "fpstop"
+    name = "xjp"
     homepage = "http://www.fpstop.com/"
 

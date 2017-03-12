@@ -1,16 +1,6 @@
 
 <aside class="site">
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">LatestPosts</h2>
-    </div>
-    <div class="list-group">
-      {{ range first 10 .Site.Pages }}
-      <a href="{{ .Permalink }}" class="list-group-item">{{ .Title }}</a>
-      {{ end }}
-    </div>
-  </div>
 
   {{ range $key, $value := .Site.Taxonomies }}
   <div class="panel panel-default">
@@ -22,6 +12,19 @@
     </div>
   </div>
   {{ end }}
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">最近更新</h2>
+    </div>
+    <div class="list-group">
+      {{ range first 10 .Site.Pages }}
+      <a href="{{ .Permalink }}" class="list-group-item">{{ .Title }}</a>
+      {{ end }}
+    </div>
+  </div>
+
+  
 
 </aside>
 
