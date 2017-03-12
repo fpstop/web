@@ -1,0 +1,16 @@
+BaseUrl: "http://www.fpstop.com"
+LanguageCode: "en-us"
+Title: "Beg"
+
+Params:
+  Author: "xjp."
+  DateForm: "Mon, Jan 2, 2006"
+  ShowRelatedPost: True
+
+Indexes:
+    
+permalinks:
+  post: /blog/:year/:month/:day/:title/
+
+MetadataFormat: "yaml"
+

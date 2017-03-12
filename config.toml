@@ -1,0 +1,8 @@
+baseurl = "http://www.fpstop.com/"
+languageCode = "en-us"
+title = "徐锦平的博客"
+
+theme = "beg"
+
+[params]
+
