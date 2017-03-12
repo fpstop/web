@@ -14,9 +14,7 @@
 
   {{ range $key, $value := .Site.Taxonomies }}
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">{{ $key | singularize }}</h2>
-    </div>
+
     <div class="list-group">
       {{ range first 10 $value.ByCount }}
       <a href="{{ $.Site.BaseURL}}{{ $key }}/{{ .Name | urlize }}" class="list-group-item">{{ .Name }}</a>
